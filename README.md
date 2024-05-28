@@ -5,7 +5,15 @@ a) There are no promotions of pawns.
 
 b) It is legal for a king to move to locations in which he will be threatened.
 
-### Functions
+## Type Definitions
+```haskell
+type Location = (Char, Int)
+data Player = White | Black deriving (Show, Eq)
+data Piece = P Location | N Location | K Location | Q Location | R Location | B Location deriving (Show, Eq)
+type Board = (Player, [Piece], [Piece])
+```
+
+## Functions
 
 #### a) setBoard :: Board
 The function does not take any inputs and returns a board representing the initial configuration depicted in Figure 1. Assume that the first turn is always on the white player. Example:

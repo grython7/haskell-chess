@@ -230,7 +230,7 @@ move piece (char2, int2) (player,whiteList,blackList) =
 		else if (isLegal piece (player,whiteList,blackList) (char2,int2))then 
 			if player == Black then (White,whiteList,(delete piece blackList)++[swap piece (char2,int2)] )
 			else (Black,(delete piece whiteList)++[swap piece (char2,int2)],blackList)
-		else error "error!"
+		else error "Illegal move!"
 		
 		
 swap (P loc) loc2 = P loc2

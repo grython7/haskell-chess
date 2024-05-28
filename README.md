@@ -93,7 +93,7 @@ Program error: This is White player’s turn, Black can’t move.
 <summary>move (R (’h’,1)) (’h’,2) (setBoard))</summary>
 
 ```haskell
-Program error: Illegal move for piece R (’h’,1)
+Program error: Illegal move
 ```
 </details>
 
